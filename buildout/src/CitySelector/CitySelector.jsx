@@ -55,7 +55,7 @@ const States=()=>{
             ))}
             </select>
             <select className={styles.dropDown} disabled={!selectedCountry} onChange={(event)=>setSelectedStates(event.target.value)}>
-             <option value="">
+             <option value="" disabled>
              Select State
             </option>
             {states.map((state)=>(
@@ -64,7 +64,7 @@ const States=()=>{
             </select>
             <select value={selectedCities} className={styles.dropDown} onChange={(event)=>setSelectedCities(event.target.value)}
             disabled={!selectedStates}>
-             <option value="">
+             <option value="" disabled>
              Select City
             </option>
             {cities.map((city)=>(
@@ -76,7 +76,7 @@ const States=()=>{
         {selectedCities && (
           <h2 className={styles.result}>You selected <span className={styles.highlight}>{selectedCities}</span>,<span className={styles.fade}>
            {" "}
-           {selectedStates},{selectedCountry}</span></h2>
+           {selectedStates}, {selectedCountry}</span></h2>
         )}
         </div>
     </div>
