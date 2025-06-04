@@ -16,3 +16,9 @@
    flex-direction: row;
    gap: 14px;
 }
+.highlight{
+    font-weight: bolder;
+}
+.fade{
+    color: gray;
+}
