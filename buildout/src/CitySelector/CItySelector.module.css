@@ -1,0 +1,18 @@
+.CitySelector{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Poppins,sans-serif;
+
+}
+.dropDown{
+   height: 29px;
+   width: 280px;
+}
+.selectors{
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   gap: 14px;
+}
